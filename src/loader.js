@@ -62,7 +62,7 @@ function setupModuleLoader(window) {
       throw 'Module '+name+' is not available!';
     }
   };
-
+  //if has requires ,then create a module ,otherwise get a module
   ensure(angular, 'module', function() {
     var modules = {};
     return function(name, requires, configFn) {
